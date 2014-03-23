@@ -21,9 +21,9 @@
 
 		<table>
 			<th>Color</th> <th>Name</th>
-			<tr><td id = "blue" class = "dragMe"></td> <td>Green</td></tr>
-			<tr><td id = "green" class = "dragMe"></td> <td>Red</td> </tr>
-			<tr><td id = "red" class = "dragMe"></td> <td>Blue</td> </tr>
+			<tr><td id = "blue blueDragMe"></td> <td id = "greenDrop">Green</td></tr>
+			<tr><td id = "green greenDragMe"></td> <td id = "redDrop">Red</td> </tr>
+			<tr><td id = "red redDragMe"></td> <td id = "blueDrop">Blue</td> </tr>
 
 		</table>
 
@@ -32,7 +32,31 @@
 	</div>
 
 	<script>
-		$( ".dragMe" ).draggable();
+		//make the draggables
+
+		$( "#blueDragMe" ).draggable();
+		$( "#greenDragMe" ).draggable();
+		$( "#redDragMe" ).draggable();
+
+		//now make the droppables
+		$( "#blueDrop" ).droppable({
+			
+			drop: function() {
+				alert("dropped" );
+		});
+
+		$("#greenDrop" ).droppable({
+
+			drop: function() {
+				alert("dropped green");
+		});
+
+		$("#redDrop" ).droppable({
+
+			drop: function() {
+				alert("dropped red");
+		});
+
 	</script>
 	</body>
 
