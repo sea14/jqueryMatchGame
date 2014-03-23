@@ -39,23 +39,9 @@
 		$( "#redDragMe" ).draggable();
 
 		//now make the droppables
-		$( "#blueDrop" ).droppable({
-			
-			drop: function() {
-				alert("dropped" );
-		})};
-
-		$("#greenDrop" ).droppable({
-
-			drop: function() {
-				alert("dropped green");
-		})};
-
-		$("#redDrop" ).droppable({
-
-			drop: function() {
-				alert("dropped red");
-		})};
+		$( "#blueDrop" ).droppable();
+		$("#greenDrop").droppable();
+		$("#redDrop").droppable();
 
 	</script>
 	</body>
