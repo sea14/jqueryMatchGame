@@ -1,3 +1,22 @@
 #main{
 	width: 100%;
 }
+
+#blue{
+	background: #3300CC;
+	width: 10%;
+	height: 5%;
+}
+
+#red{
+	background: #FF0000;
+	width: 10%;
+	height: 5%;
+}
+
+#green{
+
+	background: #339900;
+	width: 10%;
+	height: 5%;
+}
